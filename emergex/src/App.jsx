@@ -4,7 +4,7 @@ import { Suspense, lazy } from 'react';
 import './App.css';
 import About from './components/About';
 import Comrade from './components/Comrade';
-import Ecosystem from './components/Ecosystem';
+ 
 import Footer from './components/Footer';
 import Gallery from './components/Gallery';
 import Introloader from './components/Introloader';
@@ -12,7 +12,7 @@ import LandingPage from './components/LandingPage';
 import Navbar from './components/Navbar';
 import Objectives from './components/Objectives';
 import Partner from './components/Partner';
-import Services from './components/Services';
+ 
 import Traction from './components/Traction';
 import { ReactLenis, useLenis } from '@studio-freight/react-lenis'
 // import Aboutd from '../public/Aboutd';
@@ -44,8 +44,8 @@ function App() {
           )}
           <About />
           <Traction />
-          <Services />
-          <Ecosystem />
+    
+       
           <Partner />
           <Objectives />
           <Comrade/>
