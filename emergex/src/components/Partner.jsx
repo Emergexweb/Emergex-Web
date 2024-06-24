@@ -7,6 +7,7 @@ import pushImg from '../assets/img/push.webp';
 import shardeumImg from '../assets/img/shardeum.webp';
 import buildbearImg from '../assets/img/buildbear.svg';
 
+
 gsap.registerPlugin(ScrollTrigger);
 
 const Partner = () => {
@@ -65,6 +66,10 @@ const Partner = () => {
                     <img src={buildbearImg} alt="build bear" />
                     <p className='partner-text'>Build Bear</p>
                 </span>
+
+
+
+
             </div>
         </div>
     );

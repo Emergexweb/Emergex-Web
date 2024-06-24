@@ -29,19 +29,7 @@ function App() {
         <div>
           <Navbar />
           <LandingPage />
-          {/* Conditionally render the 3D scene based on device */}
-          {!isMobileDevice && (
-            <div className='threed'>
-              <Canvas>
-                <ambientLight intensity={2} />
-                <OrbitControls enableZoom={false} />
-                <Suspense fallback={null}>
-                  <Scene />
-                </Suspense>
-                <Environment preset='lobby' />
-              </Canvas>
-            </div>
-          )}
+        
           <About />
           <Traction />
     
