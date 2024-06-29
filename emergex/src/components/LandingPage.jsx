@@ -72,7 +72,7 @@ export default function LandingPage() {
                     ))}
                 </h1>
 
-                <h3 className='landing-description'>Your one stop solution for all emerging technologies.</h3>
+                <h3 className='landing-description'>Your one stop solution for all emerging technologies!</h3>
             </div>
         </div>
     );

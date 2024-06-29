@@ -3,9 +3,10 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
 import './Partner.css';
-import pushImg from '../assets/img/push.webp';
-import shardeumImg from '../assets/img/shardeum.webp';
-import buildbearImg from '../assets/img/buildbear.svg';
+import pushImg from '../assets/partnerlogos/push.webp';
+import shardeumImg from '../assets/partnerlogos/shardeum.webp';
+import buildbearImg from '../assets/partnerlogos/buildbear.svg';
+
 
 
 gsap.registerPlugin(ScrollTrigger);

@@ -1,8 +1,8 @@
 import React, { useRef } from 'react';
 import "./Objectives.css";
-import learn from "../assets/img/5437683.webp"
-import connect from "../assets/img/2929907.webp"
-import grow from "../assets/img/6736639.webp"
+import learn from "../assets/graphics/5437683.webp"
+import connect from "../assets/graphics/2929907.webp"
+import grow from "../assets/graphics/6736639.webp"
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import {useGSAP} from '@gsap/react'

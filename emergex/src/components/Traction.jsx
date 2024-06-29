@@ -83,7 +83,7 @@ export default function Traction() {
   useGSAP(() => {
     gsap.to("#univNumber", {
       duration: 1, 
-      textContent: "21",
+      textContent: "25",
       roundProps: "textContent",
       ease: "none",
       scrollTrigger: {
@@ -113,7 +113,7 @@ export default function Traction() {
                 gsap.to("#stateNumber", {
                   duration: 1, 
                   delay:1,
-                  textContent: "10",
+                  textContent: "20",
                   roundProps: "textContent",
                   ease: "none",
                   scrollTrigger: {
