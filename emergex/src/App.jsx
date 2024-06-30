@@ -27,11 +27,8 @@ function App() {
         <div>
           <Navbar />
           <LandingPage />
-        
           <About />
           <Traction />
-    
-       
           <Partner />
           <Objectives />
           <Comrade/>
