@@ -7,6 +7,11 @@ import pushImg from '../assets/partnerlogos/push.webp';
 import shardeumImg from '../assets/partnerlogos/shardeum.webp';
 import buildbearImg from '../assets/partnerlogos/buildbear.svg';
 
+import devfolioImg from '../assets/partnerlogos/devfolio.webp';
+import iedcImg from '../assets/partnerlogos/iedc.webp';
+import daocommunityImg from '../assets/partnerlogos/daocommunity.webp';
+
+
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -66,6 +71,21 @@ const Partner = () => {
                 <span className='partner-logo'>
                     <img src={buildbearImg} alt="build bear" />
                     <p className='partner-text'>Build Bear</p>
+                </span>
+
+
+
+                <span className='partner-logo'>
+                    <img src={iedcImg} alt='push-protocol' />
+                    <p className='partner-text'>IEDC</p>
+                </span>
+                <span className='partner-logo'>
+                    <img src={devfolioImg} alt='shardeum' />
+                    <p className='partner-text'>Devfolio</p>
+                </span>
+                <span className='partner-logo'>
+                    <img src={daocommunityImg} alt="build bear" />
+                    <p className='partner-text'>DAO COMMUNITY</p>
                 </span>
 
 

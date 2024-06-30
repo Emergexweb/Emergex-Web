@@ -6,12 +6,15 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
 }
 
 .partner-title {
     align-self: flex-start;
     padding-left: 3.5rem;
-    height: 40%;
+    height: auto;
+    width: 100%;
 }
 
 .partner-title h1 {
@@ -19,6 +22,7 @@
     width: 100%;
     font-weight: bold;
     display: flex;
+    flex-wrap: wrap;
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 
@@ -29,16 +33,31 @@
 
 .partner-content {
     display: flex;
+    flex-wrap: wrap; /* Allow wrapping to the next line */
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center; /* Center the items horizontally */
     width: 100%;
+    gap: 2rem; /* Add gap between items */
+    box-sizing: border-box;
+}
+
+.partner-logo {
+    flex: 1 1 30%; /* Ensure three logos per row */
+    max-width: 30%; /* Maximum width for each logo */
+    min-width: 200px; /* Minimum width for each logo */
+    transform: translateY(200px);
+    padding: 2rem;
+    opacity: 0;
+    text-align: center; /* Center the content inside the logo container */
+    box-sizing: border-box;
 }
 
 .partner-content img {
-    width: auto;
-    height: 150px;
-    margin: 0px 50px;
-    padding: 0px 0px;
+    width: 150px; /* Fixed width for all logos */
+    height: 150px; /* Fixed height for all logos */
+    object-fit: contain; /* Maintain aspect ratio */
+    margin: 0;
+    padding: 0;
 }
 
 .partner-text {
@@ -50,13 +69,7 @@
     width: 100%;
 }
 
-.partner-logo {
-    transform: translateY(200px);
-    padding: 5rem;
-    opacity: 0;
-}
-
-@media screen and (max-width:1024px) {
+@media screen and (max-width: 1024px) {
     .partner-container {
         height: auto;
     }
@@ -65,13 +78,15 @@
         font-size: 6rem;
     }
 
-    .partner-content {
-        flex-direction: column;
+    .partner-logo {
+        flex: 1 1 45%; /* Allow two logos per row */
+        max-width: 45%;
+        padding: 1.5rem;
     }
 
     .partner-content img {
-        height: 100px;
-        margin: 0px 30px;
+        width: 100px; /* Adjust width for smaller screens */
+        height: 100px; /* Adjust height for smaller screens */
     }
 
     .partner-text {
@@ -79,7 +94,7 @@
     }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
     .partner-container {
         height: auto;
     }
@@ -92,19 +107,23 @@
         font-size: 5rem;
     }
 
-    .partner-content img {
-        height: 65px;
-        margin: 0px 20px;
+    .partner-logo {
+        flex: 1 1 90%; /* Allow one logo per row */
+        max-width: 90%;
+        padding: 1rem;
+    }
 
+    .partner-content img {
+        width: 65px; /* Adjust width for smaller screens */
+        height: 65px; /* Adjust height for smaller screens */
     }
 
     .partner-text {
         font-size: 0.8rem;
     }
-
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width: 480px) {
     .partner-container {
         flex-direction: column;
         height: auto;
@@ -112,6 +131,7 @@
 
     .partner-title {
         justify-content: center;
+        padding-left: 1rem;
     }
 
     .partner-title h1 {
@@ -120,17 +140,14 @@
         margin-bottom: 1rem;
     }
 
-    .partner-content {
-        width: 100%;
-        flex-direction: column;
-    }
-
     .partner-logo {
-        padding: 0;
+        width: 100%; /* Full width for each logo */
+        padding: 0.5rem;
     }
 
     .partner-content img {
-        height: 80px;
+        width: 80px; /* Adjust width for smaller screens */
+        height: 80px; /* Adjust height for smaller screens */
         margin-top: 1rem;
         display: block;
         margin-left: auto;
@@ -155,7 +172,8 @@
     }
 
     .partner-content img {
-        height: 60px;
+        width: 60px; /* Adjust width for smaller screens */
+        height: 60px; /* Adjust height for smaller screens */
     }
 
     .partner-text {
