@@ -12,15 +12,15 @@ export default function LandingPage() {
 
         gsap.to(titleElement.children, {
             y: -40,
-            stagger: 0.05,
-            delay: 2.8,
-            duration: 0.5,
+            stagger: .1,
+            delay: 1.6,
+            duration: .1,
             ease: "back.out",
         });
         gsap.to(".landing-description", {
             y: 0,
             opacity: 1,
-            delay: 4,
+            delay: 1.6,
             duration: 1,
             ease: "back.out",
             onComplete: () => {

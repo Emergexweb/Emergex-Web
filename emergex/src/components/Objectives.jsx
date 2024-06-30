@@ -72,7 +72,7 @@ export default function Objectives() {
       x: 0,
       stagger: 0.5,
       duration: 0.5,
-      delay:1,
+      delay:0.1,
       opacity: 1,
       ease: "back.in",
       scrollTrigger: {

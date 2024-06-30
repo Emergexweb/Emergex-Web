@@ -17,7 +17,7 @@ const Navbar = () => {
 
   useGSAP(() => {
     const navbar = navbarRef.current;
-    gsap.to(navbar, { y: 0, opacity: 1, delay: 5, duration: 2, ease: "back.out" });
+    gsap.to(navbar, { y: 0, opacity: 1, delay: 2, duration: 2, ease: "back.out" });
   }, { scope: navbarRef });
 
   useEffect(() => {

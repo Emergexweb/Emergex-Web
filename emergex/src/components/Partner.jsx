@@ -50,9 +50,9 @@ const Partner = () => {
         gsap.to(".partner-logo", {
             y: 0,
             opacity:1,
-            stagger: 0.5,
-            delay: 1,
-            duration: 1,
+            stagger: 0.1,
+            delay: 0.1,
+            duration: 0.1,
             ease: "back.out",
             scrollTrigger: {
                 trigger: ".partner-content",
@@ -133,9 +133,9 @@ const Partner = () => {
 
               {/* Row 4 */}
 
-              {/* <span className='partner-logo'>
-                    <img src={buildbearImg} alt="Buildbear" />
-                </span> */}
+              <span className='partner-logo'>
+                    <img src={buildbearImg} alt="Buildbear" style={{ width: '50%', height: 'auto' }}/>
+                </span> 
 
 
                 <span className='partner-logo'>
@@ -146,9 +146,10 @@ const Partner = () => {
                     <img src={wallethunterImg} alt='Wallet Hunter' />
                 </span>
 
-                {/* <span className='partner-logo'>
-                    <img src={web3keralaImg} alt="Web3 Kerala" />
-                </span> */}
+                <span className='partner-logo'>
+    <img src={web3keralaImg} alt="Web3 Kerala" style={{ width: '50%', height: 'auto' }} />
+</span>
+
 
 
 

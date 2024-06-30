@@ -28,8 +28,9 @@ function App() {
           <Navbar />
           <LandingPage />
           <About />
+         <Traction />
           <Partner />
-          <Traction />
+         
   
           <Objectives />
           <Comrade/>
