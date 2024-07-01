@@ -1,3 +1,14 @@
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 .partner-container {
     background-color: black;
     color: white;
@@ -6,12 +17,14 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding: 2rem 1rem;
 }
 
 .partner-title {
     align-self: flex-start;
     padding-left: 3.5rem;
-    height: 40%;
+    height: auto;
+    width: 100%;
 }
 
 .partner-title h1 {
@@ -19,146 +32,91 @@
     width: 100%;
     font-weight: bold;
     display: flex;
+    flex-wrap: wrap;
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-}
-
-.partner-title h1 div {
-    transform: translateY(140px);
-    transition: transform .5s;
 }
 
 .partner-content {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-evenly;
-    width: 100%;
-}
-
-.partner-content img {
-    width: auto;
-    height: 150px;
-    margin: 0px 50px;
-    padding: 0px 0px;
-}
-
-.partner-text {
-    font-size: 1.2rem;
-    font-weight: 600;
-    padding: 0;
     justify-content: center;
-    text-align: center;
     width: 100%;
+    gap: 2rem;
 }
 
 .partner-logo {
+    flex: 1 1 calc(25% - 2rem); /* Four logos per row, with gap included */
+    max-width: calc(25% - 2rem); /* Adjust max-width if necessary */
+    min-width: 150px; /* Adjust minimum width as needed */
     transform: translateY(200px);
-    padding: 5rem;
+    padding: 2rem;
     opacity: 0;
+    text-align: center;
 }
 
-@media screen and (max-width:1024px) {
-    .partner-container {
-        height: auto;
-    }
+.partner-content img {
+    width: 200px; /* Uniform width for all logos */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure the image does not exceed its container */
+    object-fit: contain;
+    margin: 0;
+    padding: 0;
+}
 
-    .partner-title h1 {
-        font-size: 6rem;
+@media screen and (max-width: 1024px) {
+    .partner-logo {
+        flex: 1 1 calc(33.33% - 2rem); /* Three logos per row, with gap included */
+        max-width: calc(33.33% - 2rem);
+        padding: 1.5rem;
     }
-
-    .partner-content {
-        flex-direction: column;
-    }
-
     .partner-content img {
-        height: 100px;
-        margin: 0px 30px;
-    }
-
-    .partner-text {
-        font-size: 1rem;
+        width: 100px; /* Adjust width for smaller screens */
     }
 }
 
-@media screen and (max-width:768px) {
-    .partner-container {
-        height: auto;
-    }
-
+@media screen and (max-width: 768px) {
     .partner-title {
         padding-left: 2rem;
     }
 
-    .partner-title h1 {
-        font-size: 5rem;
+    .partner-logo {
+        flex: 1 1 calc(50% - 2rem); /* Two logos per row, with gap included */
+        max-width: calc(50% - 2rem);
+        padding: 1rem;
     }
-
     .partner-content img {
-        height: 65px;
-        margin: 0px 20px;
-
+        width: 80px; /* Adjust width for smaller screens */
     }
-
-    .partner-text {
-        font-size: 0.8rem;
-    }
-
 }
 
-@media screen and (max-width:480px) {
-    .partner-container {
-        flex-direction: column;
-        height: auto;
-    }
-
+@media screen and (max-width: 480px) {
     .partner-title {
         justify-content: center;
+        padding-left: 1rem;
     }
 
     .partner-title h1 {
-        flex-direction: row !important;
         font-size: 2.5rem;
         margin-bottom: 1rem;
     }
 
-    .partner-content {
-        width: 100%;
-        flex-direction: column;
-    }
-
     .partner-logo {
-        padding: 0;
+        flex: 1 1 calc(50% - 2rem); /* Two logos per row on mobile */
+        max-width: calc(50% - 2rem);
+        padding: 1rem; /* Adjust padding to ensure sufficient space */
     }
-
     .partner-content img {
-        height: 80px;
-        margin-top: 1rem;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .partner-text {
-        font-size: 1rem;
-        margin-top: 1rem !important;
+        width: 120px; /* Increase width for better visibility */
     }
 }
 
 @media screen and (min-width: 320px) and (max-width: 380px) {
-    .partner-container {
-        height: auto;
-        justify-content: center;
-    }
-
     .partner-title h1 {
         font-size: 30px;
         margin-bottom: 0rem;
     }
-
     .partner-content img {
-        height: 60px;
-    }
-
-    .partner-text {
-        font-size: 0.8rem;
+        width: 100px; /* Adjust width for smaller screens */
     }
 }

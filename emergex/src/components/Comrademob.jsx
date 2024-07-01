@@ -1,7 +1,7 @@
 import React from 'react'
 import './Comrademob.css'
-import decent from '../assets/img/1904.i502.005..Datacenter_isometric_composition-removebg-preview.webp'
-import lastimg from "../assets/img/1162788168077-removebg-preview.webp"
+import decent from '../assets/graphics/1904.i502.005..Datacenter_isometric_composition-removebg-preview.webp'
+import lastimg from "../assets/graphics/1162788168077-removebg-preview.webp"
 import NorthEastIcon from '@mui/icons-material/NorthEast';
 export default function Comrademob() {
   return (

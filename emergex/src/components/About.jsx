@@ -9,23 +9,28 @@ export default function About() {
   const aboutRef = useRef(null);
   const des = useRef(null);
   const abtContainer = useRef(null)
+
+  
   useGSAP(() => {
     const about = aboutRef.current
     gsap.to(about.children, {
         y: 0,
-        stagger: 0.05,
-        duration: 0.5,
+        stagger: 0.1,
+        duration: 0.1,
       ease: "back.out",
       scrollTrigger: {
           trigger:about
         }
     });
+
+
     const desc = des.current
     gsap.to(".about-description", {
       y: 0,
       opacity: 1,
+      stagger: 0.1,
       delay:0.5,
-      duration: 1,
+      duration: 1.5,
       ease: "back.out",
       scrollTrigger: {
         trigger:desc
