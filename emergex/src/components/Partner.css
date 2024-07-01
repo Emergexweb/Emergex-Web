@@ -1,3 +1,14 @@
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 .partner-container {
     background-color: black;
     color: white;
@@ -7,7 +18,6 @@
     align-items: center;
     flex-direction: column;
     padding: 2rem 1rem;
-    box-sizing: border-box;
 }
 
 .partner-title {
@@ -33,7 +43,6 @@
     justify-content: center;
     width: 100%;
     gap: 2rem;
-    box-sizing: border-box;
 }
 
 .partner-logo {
@@ -44,7 +53,6 @@
     padding: 2rem;
     opacity: 0;
     text-align: center;
-    box-sizing: border-box;
 }
 
 .partner-content img {
